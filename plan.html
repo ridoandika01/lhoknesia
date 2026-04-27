@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan Your Trip - Lhok Nesia</title>
+
+<link rel="stylesheet" href="css/plan.css">
+</head>
+
+<body>
+
+<header class="sub-header">
+    <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="things.html">Things</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="food.html">food</a></li>
+            <li><a href="plan.html">plan</a></li>
+            <li><a href="itinerary.html">itinerary</a></li>
+            <li><a href="stay.html">stay</a></li>
+            <li><a href="responsible.html">responsible</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="reservasi.html">Pemesanan</a></li>
+        </ul>
+    </nav>
+
+    <h1>Plan Your Trip</h1>
+</header>
+
+<main class="container">
+
+<!-- 🌍 VISA CHECK -->
+<section>
+<h2>Cek Visa</h2>
+
+<select id="negara">
+    <option value="">Pilih Negara</option>
+    <option value="indonesia">Indonesia</option>
+    <option value="malaysia">Malaysia</option>
+    <option value="singapore">Singapore</option>
+    <option value="usa">USA</option>
+</select>
+
+<button onclick="cekVisa()">Cek</button>
+
+<p id="hasilVisa"></p>
+</section>
+
+<!-- 🚗 TRANSPORT -->
+<section>
+<h2>Transportasi</h2>
+
+<ul class="info-list">
+    <li>✈️ Bandara: Malikussaleh Airport</li>
+    <li>🚗 Sewa mobil tersedia di kota</li>
+    <li>🚌 Angkutan umum & ojek online tersedia</li>
+</ul>
+
+</section>
+
+<!-- 💰 MATA UANG -->
+<section>
+<h2>Mata Uang & Internet</h2>
+
+<ul class="info-list">
+    <li>💵 Mata uang: Rupiah (IDR)</li>
+    <li>📶 SIM Card tersedia di bandara & toko lokal</li>
+    <li>📡 WiFi tersedia di hotel & cafe</li>
+</ul>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Lhok Nesia</p>
+</footer>
+
+<script src="js/plan.js"></script>
+
+</body>
+</html>

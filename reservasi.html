@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Reservasi Wisata</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<header>
+<h1>Form Reservasi Wisata</h1>
+<video autoplay muted loop class="bg-video">
+    <source src="img/snaptik_7624365071111589127_v3.mp4" type="video/mp4">
+</video>
+
+<nav>
+    <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="things.html">Things</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="food.html">food</a></li>
+            <li><a href="plan.html">plan</a></li>
+            <li><a href="itinerary.html">itinerary</a></li>
+            <li><a href="stay.html">stay</a></li>
+            <li><a href="responsible.html">responsible</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="reservasi.html">Pemesanan</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+<form id="formReservasi">
+
+<!-- Hidden -->
+<input type="hidden" name="partner_id" value="WISATA123">
+
+<h2>Data Keamanan</h2>
+
+<label>PIN 6 Digit</label>
+<input type="password" maxlength="6" required>
+
+<h2>Lokasi Penjemputan</h2>
+
+<select required>
+<option value="">Pilih Lokasi</option>
+<option>Pantai Ujong Blang</option>
+<option>Waduk Jeulikat</option>
+<option>Pulau Seumadu</option>
+<option>Pulau Seumadu</option>
+</select>
+
+<h2>Detail Keberangkatan</h2>
+
+<label>Cari Paket Wisata</label>
+<input type="search" placeholder="Contoh: pantai ujong blang">
+
+<label>Tanggal Keberangkatan</label>
+<input type="date" required>
+
+<label>Jam Berkumpul</label>
+<input type="time" required>
+
+<label>Jumlah Peserta</label>
+<input type="number" min="1" max="20" required>
+
+<h2>Preferensi Personal</h2>
+
+<label>Link Media Sosial</label>
+<input type="url" placeholder="https://instagram.com/...">
+
+<label>Warna Kaos Grup</label>
+<input type="color">
+
+<h2>Metode Pembayaran</h2>
+
+<label>
+<input type="radio" name="bayar"> Full Payment
+</label>
+
+<label>
+<input type="radio" name="bayar"> DP 50%
+</label>
+
+<h2>Fasilitas Ekstra</h2>
+
+<label>
+<input type="checkbox"> Asuransi Perjalanan
+</label>
+
+<label>
+<input type="checkbox"> Sewa Kamera
+</label>
+
+<label>
+<input type="checkbox"> Makan Malam Romantis
+</label>
+
+<h2>Upload Identitas</h2>
+
+<input type="file" required>
+
+<br><br>
+
+<button type="submit">Kirim Reservasi</button>
+
+</form>
+
+</main>
+
+<footer>
+    <p>© 2026 Lhok Nesia | Wisata Lhokseumawe</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

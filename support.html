@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support - Lhok Nesia</title>
+
+<link rel="stylesheet" href="css/support.css">
+</head>
+
+<body>
+
+<header class="sub-header">
+    <nav>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+           <li><a href="index.html">Home</a></li>
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="things.html">Things</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="food.html">food</a></li>
+            <li><a href="plan.html">plan</a></li>
+            <li><a href="itinerary.html">itinerary</a></li>
+            <li><a href="stay.html">stay</a></li>
+            <li><a href="responsible.html">responsible</a></li>
+            <li><a href="support.html">support</a></li>
+            <li><a href="reservasi.html">Pemesanan</a></li>
+        </ul>
+    </nav>
+
+    <h1>Travel Essentials & Support</h1>
+</header>
+
+<main class="container">
+
+<!-- 🚨 EMERGENCY -->
+<section>
+<h2>Emergency Numbers</h2>
+
+<ul class="info-list">
+<li>🚓 Polisi: 110</li>
+<li>🚑 Ambulans: 118</li>
+<li>🔥 Pemadam Kebakaran: 113</li>
+<li>📞 Info Wisata: 0812-xxxx-xxxx</li>
+</ul>
+
+</section>
+
+<!-- ❓ FAQ -->
+<section>
+<h2>FAQ</h2>
+
+<div class="faq">
+    <h4 onclick="toggleFAQ(this)">Apakah aman untuk wisatawan?</h4>
+    <p>Lhokseumawe relatif aman, tetap jaga barang pribadi.</p>
+
+    <h4 onclick="toggleFAQ(this)">Apakah air keran bisa diminum?</h4>
+    <p>Disarankan minum air kemasan.</p>
+
+    <h4 onclick="toggleFAQ(this)">Bagaimana cuaca?</h4>
+    <p>Tropis, panas dan kadang hujan.</p>
+</div>
+
+</section>
+
+</main>
+
+<!-- 🤖 CHATBOT -->
+<div class="chatbot">
+
+<div class="chat-header" onclick="toggleChat()">💬 Chat Bantuan</div>
+
+<div class="chat-body" id="chatBody">
+    <div id="chatMessages"></div>
+
+    <input type="text" id="userInput" placeholder="Tanya sesuatu...">
+    <button onclick="sendMessage()">Kirim</button>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 Lhok Nesia</p>
+</footer>
+
+<script src="js/support.js"></script>
+
+</body>
+</html>
