@@ -1,0 +1,149 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+.sub-header{
+    background: linear-gradient(to right, #0f4c5c, #1b6f82);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* list */
+.info-list{
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li{
+    margin: 10px 0;
+}
+
+/* FAQ */
+.faq h4{
+    cursor: pointer;
+    background: #eee;
+    padding: 10px;
+}
+
+.faq p{
+    display: none;
+    padding: 10px;
+    background: white;
+}
+
+/* chatbot */
+.chatbot{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-header{
+    background: #0f4c5c;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-body{
+    display: none;
+    background: white;
+    width: 250px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+#chatMessages{
+    height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+
+input{
+    width: 70%;
+    padding: 5px;
+}
+
+button{
+    padding: 5px;
+}
+
+/* navbar */
+nav{
+    position: fixed; /* biar nempel di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 105, 120, 0.8); /* transparan elegan */
+    backdrop-filter: blur(5px); /* efek blur modern */
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+}
+
+@media (max-width:600px){
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 15px;
+        right: 10;
+        width: 25%;
+        background: #135e71dc;
+
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+footer{
+    background: #1b6f82;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}

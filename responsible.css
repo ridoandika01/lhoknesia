@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2efe7;
+}
+
+.sub-header{
+    background: linear-gradient(to right, #135e71dc, #135e71dc);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+/* grid */
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* card */
+.card{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* button */
+button{
+    padding: 12px 20px;
+    background: #135e71dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #135e71dc;
+}
+
+/* navbar */
+nav{
+    position: fixed; /* biar nempel di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 105, 120, 0.8); /* transparan elegan */
+    backdrop-filter: blur(5px); /* efek blur modern */
+    z-index: 999;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+}
+/* responsive */
+@media (max-width:600px){
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 15px;
+        right: 10;
+        width: 25%;
+        background: #135e71dc;
+
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .grid{
+        justify-content: center;
+    }
+}
+footer{
+    background: #1b6f82;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}

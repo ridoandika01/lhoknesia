@@ -1,0 +1,388 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f2efe7;
+}
+
+header{
+    position: relative;
+    height: 60vh;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* video background */
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* biar tulisan tetap jelas */
+header::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+    z-index: -1;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed; /* biar nempel di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 105, 120, 0.8); /* transparan elegan */
+    backdrop-filter: blur(5px); /* efek blur modern */
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00cfc8;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+section{
+    padding: 20px 0;
+    border-bottom: 1px solid #d8d3c5;
+}
+
+.gallery img{
+    width: 400%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.gallery iframe{
+    width: 400%;
+    max-width: 250px;
+    height: 225px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #ffffff;
+}
+
+table, th, td{
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th{
+    background-color: #e7f4f8;
+}
+
+footer{
+    background: #166b80;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+}
+
+@media (max-width:600px){
+    nav ul li{
+        display:block;
+        margin-bottom:10px;
+    }
+    
+    .card{
+        width: 90%;
+    }
+    .instagram iframe{
+        width: 90%;
+        height: 400px;
+    }
+    .instagram img{
+        width: 100%;
+        height: 200px;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 15px;
+        right: 10;
+        width: 25%;
+        background: #135e71dc;
+
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+max-width:600px;
+margin:auto;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+form input,
+form select{
+width:100%;
+padding:10px;
+margin:8px 0 15px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#1b6f82;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1b6f82;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.destinasi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    background: white;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card img{
+    width: 100%;
+    height: 180px;      
+    object-fit: cover;  
+    border-radius: 10px 10px 0 0;
+}
+
+.card h3{
+    margin: 10px;
+}
+
+.card p{
+    margin: 0 10px 15px;
+    font-size: 14px;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+.video-container{
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-container video{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* teks di atas video */
+.video-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.video-text h3{
+    margin: 0;
+}
+
+.video-text p{
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* overlay biar teks jelas */
+.video-container::after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+}
+
+.instagram{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.instagram img{
+    width: 250px;
+    height: 250px;        
+    object-fit: cover;   
+    border-radius: 10px;
+}
+
+.instagram img:hover{
+    transform: scale(1.05);
+}
+
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    background: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* SUB HEADER */
+.sub-header{
+    background:#0f4c5c;
+    color:white;
+    text-align:center;
+    padding:30px 0;
+}
+
+/* PETA */
+.map-container{
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.map-container img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* TITIK INTERAKTIF */
+.map-point{
+    position:absolute;
+    width:20px;
+    height:20px;
+    background: #1b6f82;
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+}
+
+/* KATEGORI */
+.kategori{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.kategori-card{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+

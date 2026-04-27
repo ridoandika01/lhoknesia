@@ -1,0 +1,121 @@
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: #1b6f82;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* SEJARAH */
+.sejarah .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sejarah img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* UNESCO */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3, .card p {
+    padding: 10px;
+}
+
+/* ETIKA */
+.etika-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+footer{
+    background: #1b6f82;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE FIX */
+
+/* HP */
+@media (max-width: 768px) {
+
+    /* SEJARAH jadi ke bawah */
+    .sejarah .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sejarah img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* HERO biar ga kegedean */
+    .hero {
+        padding: 80px 20px 40px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    /* SECTION biar ga terlalu lebar */
+    section {
+        padding: 20px;
+    }
+
+    /* CARD spacing */
+    .card {
+        margin: auto;
+    }
+
+    /* ETIKA biar rapih */
+    .etika-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

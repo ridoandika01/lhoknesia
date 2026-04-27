@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2efe7;
+}
+
+.sub-header{
+    background: linear-gradient(to right, #0f4c5c, #1b6f82);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.tabs{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabs button{
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #0f4c5c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-content{
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.compare{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* navbar */
+nav{
+   position: fixed; /* biar nempel di atas */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 105, 120, 0.8); /* transparan elegan */
+    backdrop-filter: blur(5px); /* efek blur modern */
+    z-index: 999;
+}
+
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* hamburger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+}
+
+
+/* responsive */
+@media (max-width:600px){
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 15px;
+        right: 10;
+        width: 25%;
+        background: #135e71dc;
+
+        flex-direction: column;
+        display: none;
+        text-align: center;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+footer{
+    background: #1b6f82;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}

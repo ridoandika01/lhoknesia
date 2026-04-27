@@ -1,0 +1,80 @@
+.hero {
+    text-align: center;
+    padding: 60px;
+    background: #1b6f82;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CARD */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3, .card p {
+    padding: 10px;
+}
+
+/* FILTER */
+.filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: #1b6f82;
+    color: white;
+    cursor: pointer;
+}
+
+/* PASAR */
+.market {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.market img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .market {
+        flex-direction: column;
+    }
+}
+
+footer{
+    background: #1b6f82;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
